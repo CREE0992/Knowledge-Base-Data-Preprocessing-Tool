@@ -1,0 +1,19 @@
+{
+  "format": "opc-offline-backup",
+  "version": 1,
+  "project": "A09",
+  "data": {
+    "_files": {
+      "texts": [
+        {
+          "name": "清洁说明.md",
+          "size": 50,
+          "text": "清洁说明\n\n清洗后晾干；避免放入微波炉。"
+        }
+      ]
+    },
+    "text": "旅行水杯规格\n\n容量：350ml。材质：不锈钢。\n\n使用说明\n清洗后晾干；避免放入微波炉。",
+    "source": "产品说明.txt",
+    "chunk": 300
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "offlineFileProtocol": true,
+  "example": true,
+  "allExports": [
+    "下载报告 Markdown",
+    "下载可打印 HTML",
+    "下载结果 CSV",
+    "下载 知识片段.jsonl"
+  ],
+  "backupRoundtrip": true,
+  "csvImport": false,
+  "mobile390NoPageOverflow": true,
+  "browserErrors": 0,
+  "product": "knowledge-prep",
+  "interfaceVersion": "1.0.2",
+  "nodeTests": 4,
+  "nodeTestsPassed": true,
+  "standaloneLocalAssets": true,
+  "syntaxPassed": true,
+  "mitLicense": true,
+  "extractedZipUnitTests": true,
+  "extractedZipOfflineBrowser": true,
+  "interfaceTestedAt": "2026-10-28T17:54:20.497Z",
+  "businessCodeUnchanged": true
+}
