@@ -1,2 +1,66 @@
-# Knowledge-Base-Data-Preprocessing-Tool
-浙创OPC创业社区-知识库资料预处理工具，清理文字、切分段落、合并重复内容，并保留资料来源。Knowledge base preprocessing tool that cleans text, splits paragraphs, merges duplicate content, and keeps the source information
+[Uploading README.md…]()# 知识库资料预处理工具
+
+清理文字、切分段落、合并重复内容，并保留资料来源。
+
+**v1.0.2 · MIT License**
+
+![界面预览](docs/preview.png)
+
+## 快速开始
+
+1. 下载并解压仓库，在浏览器中打开 `index.html`。
+2. 点击“载入示例”了解操作，或填写自己的资料。
+3. 点击“处理资料”，核对结果并下载所需文件。
+4. 关闭页面前下载数据备份；下次可通过“恢复备份”继续。
+
+应用完全在浏览器本地运行，无需安装依赖、注册账号或配置API。
+
+## 输入与操作
+
+- **导入TXT或Markdown文件**：选择本地文件（单文件20MB、单次合计80MB以内）。
+- **也可以直接粘贴资料**：填写实际资料。
+- **粘贴资料来源**：填写实际资料。
+- **每段最大字符数**：按实际情况填写数字。
+
+
+## 结果与导出
+
+“处理资料”后显示本项目成果；可导出Markdown报告、可打印HTML以及有表格时的CSV。专用成果（图片、ZIP、游戏、字幕或代码等）有独立下载按钮。HTML报告可用浏览器打印功能保存PDF。数据备份是本项目专用JSON，不与其他项目混用。
+
+### 功能边界
+
+仅按空白与字符长度处理；完全重复片段合并来源，不作语义去重。
+
+## 代码结构
+
+- index.html / style.css：入口和基础界面。
+- theme.css：产品视觉与响应式布局。
+- app.js：本地操作、备份和导出。
+- core.js：本项目业务处理，可独立用Node测试。
+- common.js：CSV、日期、ZIP和安全文本处理等基础函数。
+- project.js：字段定义与示例数据。
+- examples/：可导入样例与CSV模板。
+- tests/：可复现的逻辑测试。
+- docs/：功能说明、验证记录和维护文档。
+
+## 开发与验证
+
+修改业务逻辑后，使用Node.js 18或更新版本执行：
+
+```sh
+node --test tests/core.test.cjs
+```
+
+界面修改后请验证资料输入、文件导出、备份恢复和窄屏布局。实际测试环境与结果见[验证记录](docs/验证记录.md)。
+
+## 数据与隐私
+
+输入和所选文件保存在当前页面内存中，不上传服务器。刷新或关闭页面前请下载备份；备份包含输入资料和附件。示例数据仅用于演示。
+
+## 贡献
+
+欢迎通过Issue报告问题，或通过Pull Request提交改进。请提供复现步骤及脱敏样例，参见[贡献说明](CONTRIBUTING.md)。
+
+## 许可证
+
+采用[MIT License](LICENSE)。使用、修改或分发时，请保留许可声明。
